@@ -1,3 +1,4 @@
 {
-    "mongoURI" : "mongodb+srv://alfredoptarigan:carthy1234@thedev.0gwy9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI" : "mongodb+srv://alfredoptarigan:carthy1234@thedev.0gwy9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "JWTSecret": "kamisatoayaka"
 }
