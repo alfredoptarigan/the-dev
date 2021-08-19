@@ -4,7 +4,9 @@ const auth = require("../../middleware/auth");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const bcrypt = require("bcryptjs");
-const { check, validationResult } = require("express-validator");
+const { validationResult } = require("express-validator");
+
+const { validationLogin } = require("../../validation/UserValidation");
 
 const User = require("../../models/User");
 
@@ -24,11 +26,6 @@ router.get("/", auth, async (req, res) => {
 // @route   POST api/auth
 // @desc    Authenticate User & Get Token
 // @access  Public
-
-const validationLogin = [
-	check("email", "Please include a valid email").isEmail(),
-	check("password", "Password is required").exists(),
-];
 
 router.post("/", validationLogin, async (req, res) => {
 	const errors = validationResult(req);
