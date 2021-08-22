@@ -1,4 +1,6 @@
 {
     "mongoURI" : "mongodb+srv://alfredoptarigan:carthy1234@thedev.0gwy9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    "JWTSecret": "kamisatoayaka"
+    "JWTSecret": "kamisatoayaka",
+    "githubClientId" : "Iv1.cf016c1fa082589d",
+    "githubSecret": "63cdebd5fb7e766cd1b22a26da0624245e40c515"
 }
