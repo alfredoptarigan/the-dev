@@ -14,8 +14,11 @@ const errObjectId = (err) => {
 	}
 };
 
+const commentValidation = [check("text", "Text is required").not().isEmpty()];
+
 module.exports = {
 	validationPost,
 	checkPost,
 	errObjectId,
+	commentValidation,
 };
